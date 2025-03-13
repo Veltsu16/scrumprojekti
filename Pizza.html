@@ -3,28 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VelsuHoiya Pizza Menu</title>
+    <title>VelsuHoiya Pizza</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ff4e4e;
+            margin: 0;
+            padding: 0;
             text-align: center;
+            background: url('pizza-background.jpg') no-repeat center center/cover;
+            color: white;
         }
-        .menu { 
-            max-width: 650px;
-            margin: auto;
-            background: rgb(197, 197, 197);
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #ff4e4e;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+        .btn {
+            background: #ff4e4e;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #d43f3f;
+        }
+        .menu {
+            background: white;
+            color: black;
+            max-width: 700px;
+            margin: 50px auto;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(164, 163, 163, 0.1);
-        }
-        h1 {
-            color: #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .item {
-            margin: 15px 0;
             padding: 10px;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #ddd;
         }
         .price {
             font-weight: bold;
@@ -33,9 +84,28 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo"><h2>VelsuHoiya Pizza</h2></div>
+        <div class="nav-links">
+            <a href="#">Etusivu</a>
+            <a href="#">A la carte</a>
+            <a href="#">Buffet</a>
+            <a href="#">Tilaukset</a>
+            <a href="#">Yhteystiedot</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Tervetuloa VelsuHoiya Pizzalle</h1>
+        <div class="buttons">
+            <button class="btn">A la carte</button>
+            <button class="btn">Lounas buffet</button>
+            <button class="btn">Online-tilaus</button>
+        </div>
+    </div>
+
     <div class="menu">
-        <img src="PizzaLOGO.webp" alt="Pizza Logo" class="logo" height="300">
-        <h1>VelsuHoiya Pizza Menu</h1>
+        <h2>Pizza Menu</h2>
         <div class="item">
             <h3>Margherita</h3>
             <p>Tomattikastike, mozzarella, basilika</p>
