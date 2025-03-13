@@ -2,138 +2,49 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VelsuHoiya Pizza</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background: url('pizza-background.jpg') no-repeat center center/cover;
-            color: white;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px 30px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .navbar a:hover {
-            color: #ff4e4e;
-        }
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .buttons {
-            display: flex;
-            gap: 15px;
-        }
-        .btn {
-            background: #ff4e4e;
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #d43f3f;
-        }
-        .menu {
-            background: white;
-            color: black;
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .item {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .price {
-            font-weight: bold;
-            color: #252556;
-        }
-    </style>
+
 </head>
+
 <body>
-    <div class="navbar">
-        <div class="logo"><h2>VelsuHoiya Pizza</h2></div>
-        <div class="nav-links">
-            <a href="#">Etusivu</a>
-            <a href="#">A la carte</a>
-            <a href="#">Buffet</a>
-            <a href="#">Tilaukset</a>
-            <a href="#">Yhteystiedot</a>
-        </div>
-    </div>
 
-    <div class="hero">
-        <h1>Tervetuloa VelsuHoiya Pizzalle</h1>
-        <div class="buttons">
-            <button class="btn">A la carte</button>
-            <button class="btn">Lounas buffet</button>
-            <button class="btn">Online-tilaus</button>
-        </div>
-    </div>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="PizzaLOGO.webp">
+            </div>
 
-    <div class="menu">
-        <h2>Pizza Menu</h2>
-        <div class="item">
-            <h3>Margherita</h3>
-            <p>Tomattikastike, mozzarella, basilika</p>
-            <p class="price">9,90€</p>
+
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#bout" class="active">bout</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#chefs">chefs</a></li>
+                    <li><a href="#menu">menu</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="item">
-            <h3>Pepperoni</h3>
-            <p>Tomattikastike, mozzarella, pepperoni</p>
-            <p class="price">10,90€</p>
-        </div>
-        <div class="item">
-            <h3>Quattro Stagioni</h3>
-            <p>Tomattikastike, mozzarella, kinkku, sienet, oliivit, artisokka</p>
-            <p class="price">12,50€</p>
-        </div>
-        <h2>Juomat</h2>
-        <div class="item">
-            <p>Coca-Cola <span class="price">3€</span></p>
-        </div>
-        <div class="item">
-            <p>Pepsi <span class="price">2,50€</span></p>
-        </div>
-        <div class="item">
-            <p>Monster Energy <span class="price">3,50€</span></p>
-        </div>
-        <div class="item">
-            <p>Vettä <span class="price">1€</span></p>
-        </div>
-    </div>
+
+        <div class="content">
+            <div class="Content-box">
+                <h2>Blable Pizza</h2>
+                <labet>Lorem ipsum dolor sit amet consectetur, adipissicing elit.</labet>
+            </div>
+        </div> 
+    </header>
 </body>
+
 </html>

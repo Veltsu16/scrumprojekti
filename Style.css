@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+}
+
+.div-header {
+    display: flax;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    padding: 30px, 0;
+    background: floralwhite;
+}
+.div-header h3 span {
+    color: black
+}
+
+.div-header {
+    color: orange
+}
+
+
+.nav-container {
+    width: 100%;
+    height: 110;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, .30),rgba(0, 0, 0, .30));
+    display: flex;
+    align-items: senter;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: absolute;
+}
+
+.nav-container .logo {
+    width: 80px;
+}
+
+.nav-container .logo img {
+    border-radius: 50%;
+}
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-top-left-radius: 25px;
+    transform: .5s;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a.horver {
+    color: black;
+    background: white;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, .50),rgba(0, 0, 0, .50),url("Pizzabackground.webp"));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+header .content h2 {
+    color: orange;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+header .content labet {
+    font-size: 20px;
+}
