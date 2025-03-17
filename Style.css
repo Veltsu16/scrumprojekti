@@ -40,9 +40,7 @@ img {
     color: orange;
 }
 
-/* Header */
 
-/* navbar */
 
 .nav-container {
     width: 100%;
@@ -82,7 +80,7 @@ img {
 }
 
 .nav-bar ul li a:hover {
-    color: black;
+    color: rgb(0, 0, 0);
     background: white;
 }
 
@@ -113,7 +111,7 @@ header .content label {
 }
 
 
-/* about */
+
 
 
 .about-box {
@@ -164,7 +162,6 @@ header .content label {
 }
 
 
-/* services */
 
 .services-box {
     background-color: #F8F8F8;
